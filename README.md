@@ -22,8 +22,8 @@ Het wetboek is ingedeeld in verschillende artikelen die de wetgeving behandelen 
 | Veroordeling  | Rijontzegging | Taakstraf | Boete    |
 |---------------|---------------|-----------|----------|
 | Eerste veroordeling  | 0-24 uur      | -         | € 1.000  |
-| Meerdere aanhoudingen binnen 24 uur | -         | -         | -        |
-| Voertuig in beslag voor 24 uur | -         | -         | -        |
+
+1.1.1 Bij meerdere aanhoudingen binnen 24 uur zal het voertuig in beslag worden genomen voor 24 uur.
 
 ### Artikel 1.2 | Het Opzettelijk Veroorzaken van Gevaar of Hinder (5A WvW)
 
@@ -39,6 +39,13 @@ Het wetboek is ingedeeld in verschillende artikelen die de wetgeving behandelen 
 
 | Veroordeling       | Taakstraf  | Rijontzegging | Boete    |
 |--------------------|------------|---------------|----------|
-| Eerste veroordeling | 10 uur     |
+| Eerste veroordeling     | 10 uur     | 0-24 uur     | € 2.000,-
+| Tweede veroordeling     | 12 uur     | 0-24 uur     | € 2.000,-
+| Meerdere veroordelingen | 15 uur     | 0-24 uur     | € 2.000,-
+
+### Artikel 1.3 | Rijden onder invloed
+1 Schuldig is een persoon die onder invloed is van alcohol, drugs of medicijnen die de rijstijl beïnvloeden.
+2. Uitzondering voor voetgangers en fietsers.
+
 
 
