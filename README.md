@@ -48,5 +48,9 @@ Het wetboek is ingedeeld in verschillende artikelen die de wetgeving behandelen 
 1 Schuldig is een persoon die onder invloed is van alcohol, drugs of medicijnen die de rijstijl beïnvloeden.
 2. Uitzondering voor voetgangers en fietsers.
 
-
+| Veroordeling       | Taakstraf  | Rijontzegging | Boete    |
+|--------------------|------------|---------------|----------|
+| Eerste veroordeling     | 20 uur     | 0-24 uur     | € 2.500,-
+| Tweede veroordeling     | 25 uur     | 0-24 uur     | € 5.000,-
+| Meerdere veroordelingen | 30 uur     | 0-24 uur     | € 7.500,-
 
