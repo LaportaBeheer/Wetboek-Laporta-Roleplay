@@ -5,14 +5,15 @@
 *Artikel III | Verkeersdelicten*
 
 *Artikel III-1 | Roekeloos rijgedrag*
-1. Het is een ieder verboden zich zodanig te gedragen dat gevaar op de weg wordt veroorzaakt of kan worden veroorzaakt. dat het verkeer op de weg wordt gehinderd of kan worden gehinderd.
 
+1. Het is een ieder verboden zich zodanig te gedragen dat gevaar op de weg wordt veroorzaakt of kan worden veroorzaakt. dat het verkeer op de weg wordt gehinderd of kan worden gehinderd.
 2. De betreffende agent zal zelf kunnen inschatten welke straf passend is bij de situatie. 
 
-                       Rijontzegging          Boete
+
+                           Rijontzegging          Boete
      
 
-Eerste veroordeling |  0-24 uur               € 1000,- 
+Eerste veroordeling     |  0-24 uur               € 1000,- 
 !Let op: Bij meerdere aanhoudingen of staandehoudingen op 1 dag mag het voertuig in beslag worden genomen voor 24 uur!
 
 
