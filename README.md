@@ -23,6 +23,7 @@ Het wetboek is ingedeeld in verschillende artikelen die de wetgeving behandelen 
 |---------------|---------------|-----------|----------|
 | Eerste veroordeling  | 0-24 uur      | -         | € 1.000  |
 
+
 1.1.1 Bij meerdere aanhoudingen binnen 24 uur zal het voertuig in beslag worden genomen voor 24 uur.
 
 ### Artikel 1.2 | Het Opzettelijk Veroorzaken van Gevaar of Hinder (5A WvW)
