@@ -1,125 +1,170 @@
-
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Laporta RP Wetboek</title>
-  <style>
-    body {
-      background-color: #121212;
-      color: #f1f1f1;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      background-color: #1f1f1f;
-      padding: 1rem 2rem;
-    }
-    header img {
-      height: 60px;
-      margin-right: 1rem;
-    }
-    header h1 {
-      font-size: 1.8rem;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    .zoekveld {
-      margin-bottom: 2rem;
-    }
-    input[type="text"] {
-      width: 100%;
-      padding: 0.5rem;
-      font-size: 1rem;
-      border-radius: 5px;
-      border: none;
-    }
-    details {
-      background-color: #1e1e1e;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-      padding: 1rem;
-    }
-    summary {
-      font-size: 1.2rem;
-      cursor: pointer;
-    }
-    article {
-      margin-top: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #888;
-    }
-  </style>
-  <script>
-    function zoekArtikelen() {
-      const input = document.getElementById("zoekInput").value.toLowerCase();
-      const artikelen = document.querySelectorAll("article");
-      artikelen.forEach(art => {
-        const tekst = art.textContent.toLowerCase();
-        art.style.display = tekst.includes(input) ? "block" : "none";
-      });
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wetboek Laporta Roleplay</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #ffffff;
+        }
+        h3 {
+            color: #f0a500;
+        }
+        .category {
+            margin-top: 30px;
+        }
+        .article {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .article h3 {
+            margin: 0;
+        }
+        .penalty {
+            background-color: #333333;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .penalty p {
+            margin: 0;
+        }
+        .penalty span {
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            color: #888888;
+            font-size: 12px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="laporta-logo-optimized.png" alt="Laporta RP Logo" />
-    <h1>Laporta RP Wetboek</h1>
-  </header>
-  <main>
-    <div class="zoekveld">
-      <input type="text" id="zoekInput" oninput="zoekArtikelen()" placeholder="Zoek op artikelnummer of trefwoord..." />
+
+    <h1>Wetboek Laporta Roleplay</h1>
+
+    <!-- Categorie: Verkeersdelicten -->
+    <div class="category">
+        <h2>Verkeersdelicten</h2>
+
+        <div class="article">
+            <h3>Artikel 1: Roekeloos Rijgedrag</h3>
+            <p>Het is verboden om zodanig gedrag te vertonen dat gevaar of hinder op de weg wordt veroorzaakt.</p>
+            
+            <div class="penalty">
+                <p><span>Straf bij eerste veroordeling:</span> 0-24 uur rijontzegging, geen taakstraf, € 1.000 boete.</p>
+                <p><span>Straf bij meerdere aanhoudingen binnen 24 uur:</span> Voertuig wordt in beslag genomen voor 24 uur.</p>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3>Artikel 1.2: Het Opzettelijk Veroorzaken van Gevaar of Hinder</h3>
+            <p>Schuldig is een persoon die opzettelijk gevaar of hinder veroorzaakt in het verkeer, zoals tegen het verkeer inrijden, gevaarlijk inhalen, etc.</p>
+
+            <div class="penalty">
+                <p><span>Straf bij eerste veroordeling:</span> 10 uur taakstraf, 0-24 uur rijontzegging, € 2.000 boete.</p>
+                <p><span>Straf bij tweede veroordeling:</span> 12 uur taakstraf, 0-24 uur rijontzegging, € 2.000 boete.</p>
+                <p><span>Straf bij meerdere veroordelingen:</span> 15 uur taakstraf, 0-24 uur rijontzegging, € 2.000 boete.</p>
+            </div>
+        </div>
     </div>
 
-    <details open>
-      <summary>Verkeerswetgeving</summary>
-      <article><strong>Artikel 1.1:</strong> Rijden zonder rijbewijs</article>
-      <article><strong>Artikel 1.2:</strong> Rijden onder invloed</article>
-      <article><strong>Artikel 1.3:</strong> Rijden door rood licht</article>
-      <article><strong>Artikel 1.4:</strong> Negeer politie stopteken</article>
-    </details>
+    <!-- Categorie: Geweldsdelicten -->
+    <div class="category">
+        <h2>Geweldsdelicten</h2>
 
-    <details>
-      <summary>Wapenwetgeving</summary>
-      <article><strong>Artikel 2.1:</strong> Illegaal wapenbezit</article>
-      <article><strong>Artikel 2.2:</strong> Openlijk dragen van een vuurwapen</article>
-      <article><strong>Artikel 2.3:</strong> Gebruik van wapens zonder reden</article>
-    </details>
+        <div class="article">
+            <h3>Artikel 2.1: Gijzeling</h3>
+            <p>Het onrechtmatig afnemen van de vrijheid van een ander.</p>
 
-    <details>
-      <summary>Geweldsdelicten</summary>
-      <article><strong>Artikel 3.1:</strong> Mishandeling</article>
-      <article><strong>Artikel 3.2:</strong> Bedreiging</article>
-      <article><strong>Artikel 3.3:</strong> Moord / Poging tot moord</article>
-    </details>
+            <div class="penalty">
+                <p><span>Straf bij eerste veroordeling:</span> 60 maanden celstraf, € 6.000 boete.</p>
+                <p><span>Straf bij tweede veroordeling:</span> 80 maanden celstraf, € 12.000 boete.</p>
+                <p><span>Straf bij meerdere veroordelingen:</span> 100 maanden celstraf, € 24.000 boete.</p>
+            </div>
+        </div>
 
-    <details>
-      <summary>Vermogensdelicten</summary>
-      <article><strong>Artikel 4.1:</strong> Diefstal</article>
-      <article><strong>Artikel 4.2:</strong> Inbraak</article>
-      <article><strong>Artikel 4.3:</strong> Oplichting</article>
-    </details>
+        <div class="article">
+            <h3>Artikel 2.2: Doodslag</h3>
+            <p>Het veroorzaken van de dood van een persoon door opzettelijk geweld.</p>
 
-    <details>
-      <summary>Overige Delicten</summary>
-      <article><strong>Artikel 5.1:</strong> Niet opvolgen bevel ambtenaar</article>
-      <article><strong>Artikel 5.2:</strong> Belediging ambtenaar in functie</article>
-      <article><strong>Artikel 5.3:</strong> Opruiing / verstoren openbare orde</article>
-    </details>
+            <div class="penalty">
+                <p><span>Straf bij eerste veroordeling:</span> 120 maanden celstraf, € 10.000 boete.</p>
+                <p><span>Straf bij tweede veroordeling:</span> 180 maanden celstraf, € 20.000 boete.</p>
+                <p><span>Straf bij meerdere veroordelingen:</span> Levenslange gevangenisstraf, € 50.000 boete.</p>
+            </div>
+        </div>
+    </div>
 
-  </main>
-  <footer>
-    &copy; 2025 Laporta RP — Officieel Wetboek
-  </footer>
+    <!-- Categorie: Vermogensdelicten -->
+    <div class="category">
+        <h2>Vermogensdelicten</h2>
+
+        <div class="article">
+            <h3>Artikel 3.1: Diefstal</h3>
+            <p>Het zonder toestemming afnemen van eigendom van een ander met het oogmerk om dit voor zichzelf te houden.</p>
+
+            <div class="penalty">
+                <p><span>Straf bij eerste veroordeling:</span> 24 maanden celstraf, € 2.000 boete.</p>
+                <p><span>Straf bij tweede veroordeling:</span> 36 maanden celstraf, € 5.000 boete.</p>
+                <p><span>Straf bij meerdere veroordelingen:</span> 60 maanden celstraf, € 10.000 boete.</p>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3>Artikel 3.2: Oplichting</h3>
+            <p>Het bedrieglijk verkrijgen van eigendom van een ander door misleiding of valse voorwendselen.</p>
+
+            <div class="penalty">
+                <p><span>Straf bij eerste veroordeling:</span> 24 maanden celstraf, € 4.000 boete.</p>
+                <p><span>Straf bij tweede veroordeling:</span> 48 maanden celstraf, € 8.000 boete.</p>
+                <p><span>Straf bij meerdere veroordelingen:</span> 72 maanden celstraf, € 15.000 boete.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categorie: Wapenwetgeving -->
+    <div class="category">
+        <h2>Wapenwetgeving</h2>
+
+        <div class="article">
+            <h3>Artikel 4.1: Onrechtmatig Bezit van Wapens</h3>
+            <p>Het bezit van vuurwapens of andere gevaarlijke wapens zonder de vereiste vergunningen.</p>
+
+            <div class="penalty">
+                <p><span>Straf bij eerste veroordeling:</span> 60 maanden celstraf, € 5.000 boete.</p>
+                <p><span>Straf bij tweede veroordeling:</span> 120 maanden celstraf, € 10.000 boete.</p>
+                <p><span>Straf bij meerdere veroordelingen:</span> Levenslange gevangenisstraf, € 25.000 boete.</p>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3>Artikel 4.2: Het Gebruik van Wapens</h3>
+            <p>Het gebruiken van een wapen in een conflict of voor criminele doeleinden.</p>
+
+            <div class="penalty">
+                <p><span>Straf bij eerste veroordeling:</span> 120 maanden celstraf, € 10.000 boete.</p>
+                <p><span>Straf bij tweede veroordeling:</span> 180 maanden celstraf, € 20.000 boete.</p>
+                <p><span>Straf bij meerdere veroordelingen:</span> Levenslange gevangenisstraf, € 50.000 boete.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Laporta Roleplay - Alle rechten voorbehouden</p>
+    </div>
+
 </body>
 </html>
