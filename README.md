@@ -1,21 +1,8 @@
-  <main>
-    <h2>Welkom</h2>
-    <p>Welkom bij het officiële wetboek van Laporta Roleplay. Hier vind je alle geldende wetten binnen de server, verdeeld per categorie.</p>
-
-    <h2>Voorbeeldartikel</h2>
-    <p><strong>Artikel 1.1 – Rijden zonder rijbewijs</strong><br />
-    Het besturen van een voertuig zonder geldig rijbewijs is strafbaar en kan leiden tot een boete of gevangenisstraf.</p>
-  </main>
-
   <footer>
     &copy; 2025 Laporta RP — Wetboek
   </footer>
 </body>
 </html>
-
-
-
-
 
 
 
