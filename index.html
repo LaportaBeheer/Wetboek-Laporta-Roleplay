@@ -1,75 +1,121 @@
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Laporta RP Wetboek</title>
-  <style>
-    body {
-      background-color: #121212;
-      color: #f1f1f1;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      background-color: #1f1f1f;
-      padding: 1rem 2rem;
-    }
-    header img {
-      height: 60px;
-      margin-right: 1rem;
-    }
-    header h1 {
-      font-size: 1.8rem;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    .zoekveld {
-      margin-bottom: 2rem;
-    }
-    input[type="text"] {
-      width: 100%;
-      padding: 0.5rem;
-      font-size: 1rem;
-      border-radius: 5px;
-      border: none;
-    }
-    details {
-      background-color: #1e1e1e;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-      padding: 1rem;
-    }
-    summary {
-      font-size: 1.2rem;
-      cursor: pointer;
-    }
-    article {
-      margin-top: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #888;
-    }
-  </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporta Roleplay Wetboek</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        header img {
+            max-height: 50px;
+            margin-bottom: 10px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        .category {
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .category ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        .category li {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="laporta-logo-optimized.png" alt="Laporta RP Logo" />
-    <h1>Laporta RP Wetboek</h1>
-  </header>
-  <main>
-    <div class="zoekveld">
-      <input type="text" id="zoekInput" oninput="zoekArtikelen()" placeholder="Zoek op artikelnummer of trefwoord..." />
-    </div>
+
+<header>
+    <img src="https://media.discordapp.net/attachments/1368933037433159773/1368933098557014056/logo_blanak.png?ex=6828864c&is=682734cc&hm=9ce2a221f73ef64ab7c343963228649ef69176628bcff9916abe4237e73c56d5&=&format=webp&quality=lossless" alt="Laporta Roleplay Logo">
+    <h1>Laporta Roleplay Wetboek</h1>
+    <p>Welkom bij het officiële wetboek van Laporta Roleplay! Hier vind je alle wetgeving voor onze FiveM-server, georganiseerd per categorie.</p>
+</header>
+
+<nav>
+    <a href="#verkeersdelicten">Verkeersdelicten</a>
+    <a href="#geweldsdelicten">Geweldsdelicten</a>
+    <a href="#vermogensdelicten">Vermogensdelicten</a>
+    <a href="#wapenwetgeving">Wapenwetgeving</a>
+</nav>
+
+<main>
+    <section id="verkeersdelicten" class="category">
+        <h2>Verkeersdelicten</h2>
+        <ul>
+            <li><strong>Artikel 1:</strong> Snelheidslimieten</li>
+            <li><strong>Artikel 2:</strong> Verkeersborden en signalen</li>
+            <li><strong>Artikel 3:</strong> Rijden onder invloed</li>
+            <li><strong>Artikel 4:</strong> Verkeersincidenten en verantwoordelijkheid</li>
+        </ul>
+    </section>
+
+    <section id="geweldsdelicten" class="category">
+        <h2>Geweldsdelicten</h2>
+        <ul>
+            <li><strong>Artikel 1:</strong> Fysiek geweld</li>
+            <li><strong>Artikel 2:</strong> Dreigen met geweld</li>
+            <li><strong>Artikel 3:</strong> Zelfverdediging</li>
+        </ul>
+    </section>
+
+    <section id="vermogensdelicten" class="category">
+        <h2>Vermogensdelicten</h2>
+        <ul>
+            <li><strong>Artikel 1:</strong> Diefstal</li>
+            <li><strong>Artikel 2:</strong> Inbraak</li>
+            <li><strong>Artikel 3:</strong> Fraude</li>
+        </ul>
+    </section>
+
+    <section id="wapenwetgeving" class="category">
+        <h2>Wapenwetgeving</h2>
+        <ul>
+            <li><strong>Artikel 1:</strong> Wapenvergunningen</li>
+            <li><strong>Artikel 2:</strong> Illegaal wapenbezit</li>
+            <li><strong>Artikel 3:</strong> Wapengebruik in zelfverdediging</li>
+        </ul>
+    </section>
+</main>
+
 <style>
     .wetboek-tabel {
         width: 100%;
