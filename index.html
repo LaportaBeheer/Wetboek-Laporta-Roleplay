@@ -1,112 +1,103 @@
 
-
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Laporta RP Wetboek</title>
   <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212; /* Zwarte achtergrond */
-            color: #e0e0e0; /* Lichte tekstkleur voor contrast */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+    body {
+      background-color: #121212;
+      color: #f1f1f1;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      background-color: #1f1f1f;
+      padding: 1rem 2rem;
+    }
+    header img {
+      height: 60px;
+      margin-right: 1rem;
+    }
+    header h1 {
+      font-size: 1.8rem;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .zoekveld {
+      margin-bottom: 2rem;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+    }
+    details {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+    summary {
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    article {
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+    }
+  </style>
 
-        .container {
-            width: 80%; /* Max breedte van de website */
-            margin: 0 auto; /* Centreert de inhoud */
-            padding: 0 40px; /* Voeg wat ruimte toe aan de zijkanten */
-            background-color: #1e1e1e; /* Donkergrijze achtergrond voor de container */
-            border-radius: 8px;
-        }
- 
-        header {
-            background-color: #1e1e1e; /* Donkergrijze header */
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        nav {
-            background-color: #333333;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        main {
-            padding: 40px;
-            text-align: center;
-        }
-
-        main h2 {
-            margin-top: 30px;
-        }
-
-        footer {
-            background-color: #1e1e1e;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        table {
-            width: 100%;
-            max-width: 100%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #f2f2f2;
-            font-weight: bold;
-        }
-
-    </style>
 </head>
 <body>
+  <header>
+    <img src="laporta-logo-optimized.png" alt="Laporta RP Logo" />
+    <h1>Laporta RP Wetboek</h1>
+  </header>
+  <main>
+    <div class="zoekveld">
+      <input type="text" id="zoekInput" oninput="zoekArtikelen()" placeholder="Zoek op artikelnummer of trefwoord..." />
+    </div>
+<style>
+    .wetboek-tabel {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1em;
+        font-family: Arial, sans-serif;
+        background-color: #1e1e1e;
+        color: #f0f0f0;
+    }
 
-<header>
-    <img src="https://media.discordapp.net/attachments/1368933037433159773/1368933098557014056/logo_blanak.png?ex=6828864c&is=682734cc&hm=9ce2a221f73ef64ab7c343963228649ef69176628bcff9916abe4237e73c56d5&=&format=webp&quality=lossless" alt="Laporta Roleplay Logo">
-    <h1>Laporta Roleplay Wetboek</h1>
-    <p>Welkom bij het officiële wetboek van Laporta Roleplay!</p>
-</header>
+    .wetboek-tabel th, .wetboek-tabel td {
+        border: 1px solid #444;
+        padding: 10px;
+        text-align: center;
+    }
 
-  
-<main>
-    </h1>
-    <pstyle="font-size: 1.2em; font-style: italic; color: #bdc3c7; margin-top: 10px;">
-      Wetgeving en richtlijnen voor de FiveM-server
-    </p>
-</main>
+    .wetboek-tabel thead {
+        background-color: #2d2d2d;
+        font-weight: bold;
+    }
+
+    .wetboek-tabel tbody tr:nth-child(even) {
+        background-color: #2a2a2a;
+    }
+
+    .wetboek-tabel tbody tr:nth-child(odd) {
+        background-color: #1e1e1e;
+    }
    
 <summary>Verkeerswetgeving</summary>
       <h2 style="color:gold; font-weight:bold;">Artikel 1.1: Roekeloos rijgedrag</h2>
