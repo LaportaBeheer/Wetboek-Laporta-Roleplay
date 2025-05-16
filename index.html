@@ -72,6 +72,40 @@
       <input type="text" id="zoekInput" oninput="zoekArtikelen()" placeholder="Zoek op artikelnummer of trefwoord..." />
     </div>
 <style>
+    .wetboek-tabel {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1em;
+        font-family: Arial, sans-serif;
+        background-color: #1e1e1e;
+        color: #f0f0f0;
+    }
+
+    .wetboek-tabel th, .wetboek-tabel td {
+        border: 1px solid #444;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .wetboek-tabel thead {
+        background-color: #2d2d2d;
+        font-weight: bold;
+    }
+
+    .wetboek-tabel tbody tr:nth-child(even) {
+        background-color: #2a2a2a;
+    }
+
+    .wetboek-tabel tbody tr:nth-child(odd) {
+        background-color: #1e1e1e;
+    }
+</head>
+<body>
+  <header>
+    <img src="laporta-logo-optimized.png" alt="Laporta RP Logo" />
+    <h1>Laporta RP Wetboek</h1>
+  </header>
+<style>
   
     <details open>
      Verkeerswetgeving
@@ -380,7 +414,7 @@
     </details>
 
     <details>
-      <summary>Geweldsdelicten</summary>
+      </p>Geweldsdelicten</p>
       <h2 style="color:gold; font-weight:bold;">Artikel 2.1: Gijzeling</h2>
 <p>1. Schuldig is een persoon die met opzet de vrijheid van een ander afneemt.</p>
 <p>2. Wanneer het slachtoffer een ambtenaar in functie is wordt de straf met 33% verhoogd.</p>
