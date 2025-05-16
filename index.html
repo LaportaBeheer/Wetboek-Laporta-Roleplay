@@ -60,16 +60,7 @@
       color: #888;
     }
   </style>
-  <script>
-    function zoekArtikelen() {
-      const input = document.getElementById("zoekInput").value.toLowerCase();
-      const artikelen = document.querySelectorAll("article");
-      artikelen.forEach(art => {
-        const tekst = art.textContent.toLowerCase();
-        art.style.display = tekst.includes(input) ? "block" : "none";
-      });
-    }
-  </script>
+
 </head>
 <body>
   <header>
