@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -24,6 +23,7 @@
     }
     header h1 {
       font-size: 1.8rem;
+      color: #ffffff;
     }
     main {
       max-width: 900px;
@@ -39,6 +39,8 @@
       font-size: 1rem;
       border-radius: 5px;
       border: none;
+      background-color: #2a2a2a;
+      color: #f1f1f1;
     }
     details {
       background-color: #1e1e1e;
@@ -49,6 +51,10 @@
     summary {
       font-size: 1.2rem;
       cursor: pointer;
+      color: #e0e0e0;
+    }
+    summary:hover {
+      color: #ffffff;
     }
     article {
       margin-top: 1rem;
@@ -58,8 +64,30 @@
       padding: 2rem;
       color: #888;
     }
+    .wetboek-tabel {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+    }
+    .wetboek-tabel th, .wetboek-tabel td {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: center;
+    }
+    .wetboek-tabel thead {
+      background-color: #2d2d2d;
+      font-weight: bold;
+    }
+    .wetboek-tabel tbody tr:nth-child(even) {
+      background-color: #2a2a2a;
+    }
+    .wetboek-tabel tbody tr:nth-child(odd) {
+      background-color: #1e1e1e;
+    }
   </style>
-
 </head>
 <body>
   <header>
@@ -70,1317 +98,82 @@
     <div class="zoekveld">
       <input type="text" id="zoekInput" oninput="zoekArtikelen()" placeholder="Zoek op artikelnummer of trefwoord..." />
     </div>
-<style>
-    .wetboek-tabel {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 1em;
-        font-family: Arial, sans-serif;
-        background-color: #1e1e1e;
-        color: #f0f0f0;
-    }
 
-    .wetboek-tabel th, .wetboek-tabel td {
-        border: 1px solid #444;
-        padding: 10px;
-        text-align: center;
-    }
+    <!-- Artikel 1: Algemeen -->
+    <article>
+      <h2>Artikel 1: Algemeen</h2>
+      <p>Dit is de inleiding van artikel 1, waarin algemene regels worden beschreven.</p>
+    </article>
 
-    .wetboek-tabel thead {
-        background-color: #2d2d2d;
-        font-weight: bold;
-    }
+    <!-- Artikel 2: Verkeerswetgeving -->
+    <article>
+      <h2>Artikel 2: Verkeerswetgeving</h2>
+      <p>Dit artikel behandelt verkeersregels en strafbaarstellingen met betrekking tot verkeersdelicten.</p>
+    </article>
 
-    .wetboek-tabel tbody tr:nth-child(even) {
-        background-color: #2a2a2a;
-    }
+    <!-- Artikel 3: Geweldsdelicten -->
+    <article>
+      <h2>Artikel 3: Geweldsdelicten</h2>
+      <p>In dit artikel worden de verschillende soorten geweldsdelicten behandeld, zoals mishandeling en bedreiging.</p>
+    </article>
 
-    .wetboek-tabel tbody tr:nth-child(odd) {
-        background-color: #1e1e1e;
-    }
-   
-<section>
-  <h2 style="color:#2d9cdb; font-size:1.8rem;">Verkeerswetgeving</h2>
-<article>
-  <h2 style="color:gold; font-weight:bold;">Artikel 1.1: Roekeloos rijgedrag</h2>
-  <p>1. Het is ieder verboden zich zodanig te gedragen dat gevaar op de weg wordt veroorzaakt of kan worden veroorzaakt, dat het verkeer op de weg wordt gehinderd of kan worden gehinderd.</p>
-  <p>2. De betreffende agent zal zelf kunnen inschatten welke straf passend is bij de situatie.</p>
+    <!-- Artikel 4: Vermogensdelicten -->
+    <article>
+      <h2>Artikel 4: Vermogensdelicten</h2>
+      <p>Dit artikel gaat over diefstal, fraude en andere vermogensdelicten.</p>
+    </article>
 
-  <h4 style="margin-top:20px;">Veroordelingen</h4>
-  <table class="wetboek-tabel">
-    <thead>
-      <tr>
-        <th>Veroordeling</th>
-        <th>Rijontzegging</th>
-        <th>Taakstraf</th>
-        <th>Boete</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Eerste veroordeling</td>
-        <td>0-24 uur</td>
-        <td>-</td>
-        <td>€ 1.000,-</td>
-      </tr>
-      <tr>
-        <td>Tweede veroordeling</td>
-        <td>0-24 uur</td>
-        <td>-</td>
-        <td>€ 1.000,-</td>
-      </tr>
-      <tr>
-        <td>Derde veroordeling</td>
-        <td>0-24 uur</td>
-        <td>-</td>
-        <td>€ 1.000,-</td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-</section>
-  
-<summary>Bijzondere bepalingen</summary>
-    <p><em>Bij meerdere aanhoudingen of staandehoudingen binnen 24 uur mag het voertuig in beslag worden genomen voor 24 uur.</em></p>
-</article>
-      <h2 style="color:gold; font-weight:bold;">Artikel 1.2: Het Opzettelijk Veroorzaken van Gevaar of Hinder (5A WvW)</h2>
-<p>1. Schuldig is een persoon die opzettelijk zich gevaarlijk gedraagt in het verkeer.</p>
-<p>2. De volgende gedragingen zullen bestraft worden wanneer een ongeluk wordt veroorzaakt:</p>
-<ul>
-    <li>Tegen het verkeer inrijden</li>
-    <li>Gevaarlijk inhalen</li>
-    <li>Over een vluchtstrook rijden waar dit niet is toegestaan</li>
-    <li>Door het rode licht rijden</li>
-    <li>Tijdens het rijden een elektronisch apparaat vasthouden</li>
-    <li>Geen voorrang verlenen</li>
-    <li>Snelheidslimiet overschrijden</li>
-</ul>
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Taakstraf</th>
-            <th>Rijontzegging</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>10 uur</td>
-            <td>0–24 uur</td>
-            <td>€ 2.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>12 uur</td>
-            <td>0–24 uur</td>
-            <td>€ 2.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>15 uur</td>
-            <td>0–24 uur</td>
-            <td>€ 2.000,-</td>
-        </tr>
-    </tbody>
-</table>
-      <h2 style="color:gold; font-weight:bold;">Artikel 1.3: Rijden onder invloed</h2>
-<p>1. Schuldig is een persoon die onder invloed is van alcohol, drugs of medicijnen die de rijstijl beïnvloeden.</p>
-<p>2. Uitzondering voor voetgangers en fietsers.</p>
-    <thead>
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Taakstraf</th>
-            <th>Rijontzegging</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>20 uur</td>
-            <td>0–24 uur</td>
-            <td>€ 2.500,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>25 uur</td>
-            <td>0–24 uur</td>
-            <td>€ 5.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>30 uur</td>
-            <td>0–24 uur</td>
-            <td>€ 7.500,-</td>
-        </tr>
-    </tbody>
-</table>
-      <h2 style="color:gold; font-weight:bold;">Artikel 1.4: Rijden zonder rijbewijs</h2>
-<p><strong>1.</strong> Schuldig is een persoon die zonder een rijbewijs deelneemt aan het verkeer.<br>
-<strong>2.</strong> Wanneer de persoon een rijontzegging heeft, wordt de straf met 33% verhoogd.</p>
-  <thead>
-    <tr>
-      <th>Veroordeling</th>
-      <th>Taakstraf</th>
-      <th>Rijontzegging</th>
-      <th>Boete</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Eerste veroordeling</td>
-      <td>10 uur</td>
-      <td>0-24 uur</td>
-      <td>€ 2.500,-</td>
-    </tr>
-    <tr>
-      <td>Tweede veroordeling</td>
-      <td>20 uur</td>
-      <td>0-24 uur</td>
-      <td>€ 2.500,-</td>
-    </tr>
-    <tr>
-      <td>Meerdere veroordelingen</td>
-      <td>30 uur</td>
-      <td>24-48 uur</td>
-      <td>€ 5.000,-</td>
-    </tr>
-  </tbody>
-</table>
-      <h2 style="color:gold; font-weight:bold;">Artikel 1.5: Verlaten van een verkeersongeval</h2>
-<p>1. Schuldig is een persoon die de plaats van een verkeersongeval verlaat die hij heeft veroorzaakt.</p>
-<p>2. Wanneer de persoon zich erna nog meldt bij de persoon of politie zal de persoon er niet meer voor worden veroordeeld.</p>
-<p>3. Wanneer het slachtoffer zwaargewond raakt, zal de straf met 33% worden verhoogd.</p>
-<p>4. Het rijbewijs van de verdachte zal ook worden afgenomen.</p>
+    <!-- Artikel 5: Wapenwetgeving -->
+    <article>
+      <h2>Artikel 5: Wapenwetgeving</h2>
+      <p>In dit artikel worden de regels met betrekking tot wapens en verboden wapens behandeld.</p>
+    </article>
 
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Rijontzegging</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>10 maanden</td>
-            <td>0–24 uur</td>
-            <td>€ 1.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>15 maanden</td>
-            <td>0–24 uur</td>
-            <td>€ 2.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>30 maanden</td>
-            <td>24–48 uur</td>
-            <td>€ 3.000,-</td>
-        </tr>
-    </tbody>
-</table>
-      
-      <h2 style="color:gold; font-weight:bold;">Artikel 1.6: Veroorzaken van een ongeval met licht lichamelijk letsel als gevolg</h2>
-<p>1. Schuldig is een persoon die een ongeluk veroorzaakt met licht lichamelijk letsel tot gevolg.</p>
-<p>2. De desbetreffende agent zal kunnen inschatten of het rijbewijs wordt ingevorderd.</p>
+    <!-- Artikel 6: Alcohol en drugs -->
+    <article>
+      <h2>Artikel 6: Alcohol en drugs</h2>
+      <p>Regels omtrent het gebruik van alcohol en drugs in het verkeer en de gevolgen hiervan.</p>
+    </article>
 
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Taakstraf</th>
-            <th>Rijontzegging</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>10 uur</td>
-            <td>0–24 uur</td>
-            <td>€ 2.500,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>15 uur</td>
-            <td>0–24 uur</td>
-            <td>€ 5.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>20 uur</td>
-            <td>24–48 uur</td>
-            <td>€ 7.500,-</td>
-        </tr>
-    </tbody>
-</table>
-      <h2 style="color:gold; font-weight:bold;">Artikel 1.7: Veroorzaken van een ongeluk met zwaar lichamelijk letsel als gevolg</h2>
-<p>1. Schuldig is een persoon die een ongeluk veroorzaakt met zwaar lichamelijk letsel als gevolg.</p>
-<p>2. De desbetreffende agent zal kunnen inschatten of het rijbewijs moet worden ingevorderd.</p>
+    <!-- Artikel 7: Handhaving -->
+    <article>
+      <h2>Artikel 7: Handhaving</h2>
+      <p>De procedures en regels omtrent de handhaving van de wetgeving binnen de server.</p>
+    </article>
 
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Taakstraf</th>
-            <th>Rijontzegging</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>10 uur</td>
-            <td>0–24 uur</td>
-            <td>€ 3.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>15 uur</td>
-            <td>0–24 uur</td>
-            <td>€ 3.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>20 uur</td>
-            <td>24–48 uur</td>
-            <td>€ 6.000,-</td>
-        </tr>
-    </tbody>
-</table>
-      <h2 style="color:gold; font-weight:bold;">Artikel 1.8: Veroorzaken van een ongeluk met dood tot gevolg</h2>
-<p>1. Schuldig is een persoon die een ongeluk veroorzaakt met de dood als gevolg.</p>
-<p>2. De desbetreffende agent zal kunnen inschatten of het rijbewijs moet worden ingevorderd.</p>
+    <!-- Artikel 8: Sancties en straffen -->
+    <article>
+      <h2>Artikel 8: Sancties en straffen</h2>
+      <p>Beschrijving van de mogelijke sancties en straffen voor overtredingen van de wetgeving.</p>
+    </article>
 
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Taakstraf</th>
-            <th>Rijontzegging</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>20 uur</td>
-            <td>0–24 uur</td>
-            <td>€ 4.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>25 uur</td>
-            <td>0–24 uur</td>
-            <td>€ 4.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>40 uur</td>
-            <td>24–48 uur</td>
-            <td>€ 8.000,-</td>
-        </tr>
-    </tbody>
-</table>
-      <h2 style="color:gold; font-weight:bold;">Artikel 1.9: Voertuig eisen</h2>
-          <p>Bij de volgende benoemingen zal er een WOK-status op een auto kunnen worden gezet:</p>
-    <ul>
-        <li>Het voertuig moet alle deuren hebben;</li>
-        <li>Er mag geen verlichting onder de auto (Neons) worden geplaatst;</li>
-        <li>Er moet door de ramen van het voertuig gekeken kunnen worden, de bestuurder moet zichtbaar zijn in het voertuig;</li>
-        <li>Het voertuig moet minimaal 1 nummerplaat hebben, indien dit mogelijk is;</li>
-        <li>Als de persoon wordt aangehouden met een WOK-status wordt de auto in beslag genomen voor 24 uur.</li>
-    </ul>
-</article>
+    <!-- Artikel 9: Proces en rechtsgang -->
+    <article>
+      <h2>Artikel 9: Proces en rechtsgang</h2>
+      <p>In dit artikel wordt de rechtsgang beschreven voor het proces bij overtredingen en misdrijven.</p>
+    </article>
 
-      <summary>Geweldsdelicten</summary>
-      <h2 style="color:gold; font-weight:bold;">Artikel 2.1: Gijzeling</h2>
-<p>1. Schuldig is een persoon die met opzet de vrijheid van een ander afneemt.</p>
-<p>2. Wanneer het slachtoffer een ambtenaar in functie is wordt de straf met 33% verhoogd.</p>
-<p>3. Wanneer er sprake is van poging tot ontvoering wordt de straf met 33% verminderd.</p>
+    <!-- Artikel 10: Privacy en gegevensbescherming -->
+    <article>
+      <h2>Artikel 10: Privacy en gegevensbescherming</h2>
+      <p>Regels omtrent de bescherming van persoonlijke gegevens van de spelers binnen de server.</p>
+    </article>
 
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>60 maanden</td>
-            <td>-</td>
-            <td>€ 6.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>80 maanden</td>
-            <td>-</td>
-            <td>€ 12.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>100 maanden</td>
-            <td>-</td>
-            <td>€ 24.000,-</td>
-        </tr>
-    </tbody>
-</table>
-      <h2 style="color:gold; font-weight:bold;">Artikel 2.2: Mishandeling</h2>
-<p>1. Schuldig is een persoon die met opzet een ander mishandelt met lichamelijke gevolgen.</p>
-<p>2. Wanneer het slachtoffer een ambtenaar in functie is wordt de straf met 33% verhoogd.</p>
-<p>3. Als de persoon zwaar is mishandeld wordt de straf met 33% verhoogd.</p>
-<p>4. Als het slachtoffer lichamelijk én geestelijk wordt getroffen dan valt het onder zware mishandeling.</p>
+    <!-- Voeg hier meer artikelen en secties toe -->
 
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>-</td>
-            <td>50 uren</td>
-            <td>€ 2.500,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>12 maanden</td>
-            <td>-</td>
-            <td>€ 5.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>30 maanden</td>
-            <td>-</td>
-            <td>€ 10.000,-</td>
-        </tr>
-    </tbody>
-</table>
-      <h2 style="color:gold; font-weight:bold;">Artikel 2.3: Doodslag</h2>
-<p>1. Schuldig is een persoon die opzettelijk een ander berooft van het leven.</p>
-<p>2. Wanneer het slachtoffer een ambtenaar in functie is wordt de straf met 33% verhoogd.</p>
-<p>3. Bij poging tot doodslag wordt de straf met 33% verminderd.</p>
-
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>40 maanden</td>
-            <td>-</td>
-            <td>€ 5.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>45 maanden</td>
-            <td>-</td>
-            <td>€ 10.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>60 maanden</td>
-            <td>-</td>
-            <td>€ 15.000,-</td>
-        </tr>
-    </tbody>
-</table>
-      <h2 style="color:gold; font-weight:bold;">Artikel 2.4: Moord</h2>
-<p>1. Schuldig is een persoon die welbewust een ander van het leven berooft.</p>
-<p>2. Wanneer het slachtoffer een ambtenaar in functie is wordt de straf met 33% verhoogd.</p>
-<p>3. Bij poging tot moord wordt de straf met 33% verminderd.</p>
-
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>50 maanden</td>
-            <td>-</td>
-            <td>€ 15.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>70 maanden</td>
-            <td>-</td>
-            <td>€ 15.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>90 maanden</td>
-            <td>-</td>
-            <td>€ 30.000,-</td>
-        </tr>
-    </tbody>
-</table>
-
-      <summary>Vermogensdelicten</summary>
-      <h2 style="color:gold; font-weight:bold;">Artikel 3.1: Diefstal</h2>
-<p>1. Schuldig is een persoon die de goederen, voertuigen of spullen wegneemt zonder toestemming ervoor te hebben.</p>
-<p>2. Gaat de prijs van het gestolen object of voertuig boven de € 150.000,- zal de straf met 33% worden verhoogd.</p>
-
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>-</td>
-            <td>25 uren</td>
-            <td>€ 3.500,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>-</td>
-            <td>50 uren</td>
-            <td>€ 3.500,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>10 maanden</td>
-            <td>-</td>
-            <td>€ 7.000,-</td>
-        </tr>
-    </tbody>
-</table>
-      <h2 style="color:gold; font-weight:bold;">Artikel 3.2: Diefstal met geweld/Overval</h2>       
-<p>1. Schuldig is een persoon die de goederen, voertuigen of spullen wegneemt zonder toestemming, en daarbij geweld gebruikt.</p>
-<p>2. Bij poging tot diefstal met geweld wordt de straf met 33% verminderd.</p>
-<p>3. Het plegen van een overval is diefstal.</p>
-
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>15 maanden</td>
-            <td>-</td>
-            <td>€ 8.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>20 maanden</td>
-            <td>-</td>
-            <td>€ 8.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>30 maanden</td>
-            <td>-</td>
-            <td>€ 16.000,-</td>
-        </tr>
-    </tbody>
-</table>
-      <h2 style="color:gold; font-weight:bold;">Artikel 3.3: Huisvredebreuk</h2>
-      <h2 style="color:gold; font-weight:bold;">Artikel 3.4: Lokaalvredebreuk</h2>
-      <h2 style="color:gold; font-weight:bold;">Artikel 3.5: Witwassen</h2>
-<p>1. Schuldig is een persoon die geld of spullen via een misdrijf verdiend heeft, en deze legaal probeert te krijgen.</p>
-
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>15 maanden</td>
-            <td>-</td>
-            <td>€ 8.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>20 maanden</td>
-            <td>-</td>
-            <td>€ 8.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>30 maanden</td>
-            <td>-</td>
-            <td>€ 16.000,-</td>
-        </tr>
-    </tbody>
-</table>
-      <h2 style="color:gold; font-weight:bold;">Artikel 3.6: Vernieling</h2>
-<p>1. Schuldig is een persoon die opzettelijk en wederrechtelijk een goed dat geheel of ten dele aan een ander toebehoort, vernielt, beschadigt, onbruikbaar maakt of wegmaakt.</p>
-<p>2. Wanneer het goed of dier aangemerkt kan worden als eigendom van de overheid wordt de straf met 33% verhoogd.</p>
-<p>3. Bij een poging tot vernieling wordt de straf met 33% verminderd.</p>
-
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>-</td>
-            <td>15 uren</td>
-            <td>€ 2.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>-</td>
-            <td>25 uren</td>
-            <td>€ 4.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>9 maanden</td>
-            <td>-</td>
-            <td>€ 6.000,-</td>
-        </tr>
-    </tbody>
-</table>
-      <h2 style="color:gold; font-weight:bold;">Artikel 3.7: Afpersing/chantage</h2>
-<p>1. Schuldig is een persoon die met druk goederen van een ander afneemt.</p>
-<p>2. Bij poging tot afpersing zal de straf met 33% worden verminderd.</p>
-
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>15 maanden</td>
-            <td>-</td>
-            <td>€ 2.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>20 maanden</td>
-            <td>-</td>
-            <td>€ 4.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>30 maanden</td>
-            <td>-</td>
-            <td>€ 6.000,-</td>
-        </tr>
-    </tbody>
-</table>
-
-      <summary>Wet Wapen en Munitie (WWM)</summary>
-      <h2 style="color:gold; font-weight:bold;">Artikel 4.1: Steek en Slagwapens</h2>
-<p>1. Schuldig is een persoon die een slagwapen bij zich draagt, in zijn auto heeft opgeslagen of in zijn huis om er iemand mee te verwonden.</p>
-<p>2. Voor steekwapens geldt Lid 1 niet. Alle steekwapens zijn verboden.</p>
-
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>-</td>
-            <td>-</td>
-            <td>€ 5.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>15 maanden</td>
-            <td>-</td>
-            <td>€ 5.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>25 maanden</td>
-            <td>-</td>
-            <td>€ 10.000,-</td>
-        </tr>
-    </tbody>
-</table>
-
-      <h2 style="color:gold; font-weight:bold;">Artikel 4.2: Vuurwapens en Explosieven (WWM)</h2>
-<p>1. Strafbaar is een persoon die een vuurwapen bij zich draagt, in zijn auto heeft opgeslagen of in zijn huis.</p>
-<p>2. Per vuurwapen wordt met een categorie gewerkt. De volgende categorieën zijn:</p>
-<ul>
-    <li><strong>Categorie 2</strong>: Kleinere vuurwapens zoals pistolen.</li>
-    <li><strong>Categorie 3</strong>: Zwaardere vuurwapens zoals shotguns en andere automatische vuurwapens.</li>
-</ul>
-<h3>Categorie 1</h3>
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>30 maanden</td>
-            <td>-</td>
-            <td>€ 15.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>45 maanden</td>
-            <td>-</td>
-            <td>€ 15.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>55 maanden</td>
-            <td>-</td>
-            <td>€ 30.000,-</td>
-        </tr>
-    </tbody>
-</table>
-
-<h3>Categorie 2</h3>
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>70 maanden</td>
-            <td>-</td>
-            <td>€ 20.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>80 maanden</td>
-            <td>-</td>
-            <td>€ 40.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>100 maanden</td>
-            <td>-</td>
-            <td>€ 60.000,-</td>
-        </tr>
-    </tbody>
-</table>
-      <h2 style="color:gold; font-weight:bold;">Artikel 4.3: Holsters en nepwapens</h2>
-<p>1. Strafbaar is een persoon die een holster draagt met hierin een nepwapen die niet te bemerken is van een echt wapen.</p>
-<p>2. Wanneer de holster leeg is wordt de straf met 33% verminderd.</p>
-
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>-</td>
-            <td>10 uren</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>-</td>
-            <td>20 uren</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>15 maanden</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-    </tbody>
-</table>
-      <h2 style="color:gold; font-weight:bold;">Artikel 4.4: Wapenhandel</h2>
-<p>1. Strafbaar is een persoon die wapens verhandelt naar een ander.</p>
-<p>2. Als er sprake is van poging tot wapenhandel zal de straf met 33% worden verminderd.</p>
-
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>10 maanden</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>20 maanden</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>30 maanden</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-    </tbody>
-</table>
-
-      <summary>Opiumwet</summary>
-      <h2 style="color:gold; font-weight:bold;">Artikel 5.1: Softdrugs</h2>
-<p>1. Schuldig is een persoon die softdrugs doorverkoopt of in bezit heeft.</p>
-<p>2. Schuldig is ook een persoon die de benodigdheden voor het maken van softdrugs in bezit heeft.</p>
-<p>3. Niet schuldig is een persoon die maximaal 3 eindproducten bij heeft voor eigen gebruik.</p>
-
-<h3>Ingrediënten</h3>
-
-<h4>3-25 ingrediënten</h4>
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>-</td>
-            <td>15 uren</td>
-            <td>€ 1.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>-</td>
-            <td>20 uren</td>
-            <td>€ 2.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>-</td>
-            <td>30 uren</td>
-            <td>€ 4.000,-</td>
-        </tr>
-    </tbody>
-</table>
-
-<h4>26-150 ingrediënten</h4>
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>-</td>
-            <td>30 uren</td>
-            <td>€ 3.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>-</td>
-            <td>40 uren</td>
-            <td>€ 3.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>-</td>
-            <td>50 uren</td>
-            <td>€ 6.000,-</td>
-        </tr>
-    </tbody>
-</table>
-
-<h4>150+ ingrediënten</h4>
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>25 maanden</td>
-            <td>-</td>
-            <td>€ 4.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>45 maanden</td>
-            <td>-</td>
-            <td>€ 4.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>50 maanden</td>
-            <td>-</td>
-            <td>€ 8.000,-</td>
-        </tr>
-    </tbody>
-</table>
-
-<h3>Eindproducten</h3>
-
-<h4>3-25 eindproducten</h4>
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>-</td>
-            <td>20 uren</td>
-            <td>€ 2.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>-</td>
-            <td>25 uren</td>
-            <td>€ 2.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>-</td>
-            <td>30 uren</td>
-            <td>€ 4.000,-</td>
-        </tr>
-    </tbody>
-</table>
-
-<h4>25-80 eindproducten</h4>
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>-</td>
-            <td>40 uren</td>
-            <td>€ 3.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>10 maanden</td>
-            <td>-</td>
-            <td>€ 3.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>15 maanden</td>
-            <td>-</td>
-            <td>€ 6.000,-</td>
-        </tr>
-    </tbody>
-</table>
-
-<h4>80+ eindproducten</h4>
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>25 maanden</td>
-            <td>-</td>
-            <td>€ 6.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>30 maanden</td>
-            <td>-</td>
-            <td>€ 6.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>40 maanden</td>
-            <td>-</td>
-            <td>€ 12.000,-</td>
-        </tr>
-    </tbody>
-</table>
-      <h2 style="color:gold; font-weight:bold;">Artikel 5.2: Harddrugs</h2>
-<p>1. Schuldig is een persoon die harddrugs doorverkoopt of in bezit heeft.</p>
-<p>2. Schuldig is ook een persoon die de benodigdheden voor het maken van harddrugs in bezit heeft.</p>
-
-<h3>Ingrediënten</h3>
-
-<h4>1-25 ingrediënten</h4>
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>-</td>
-            <td>15 uren</td>
-            <td>€ 3.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>-</td>
-            <td>30 uren</td>
-            <td>€ 3.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>60 maanden</td>
-            <td>-</td>
-            <td>€ 3.000,-</td>
-        </tr>
-    </tbody>
-</table>
-
-<h4>26-150 ingrediënten</h4>
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>20 maanden</td>
-            <td>-</td>
-            <td>€ 5.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>30 maanden</td>
-            <td>-</td>
-            <td>€ 5.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>40 maanden</td>
-            <td>-</td>
-            <td>€ 5.000,-</td>
-        </tr>
-    </tbody>
-</table>
-
-<h4>150+ ingrediënten</h4>
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>25 maanden</td>
-            <td>-</td>
-            <td>€ 8.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>45 maanden</td>
-            <td>-</td>
-            <td>€ 8.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>50 maanden</td>
-            <td>-</td>
-            <td>€ 16.000,-</td>
-        </tr>
-    </tbody>
-</table>
-
-<h3>Eindproducten</h3>
-
-<h4>1-25 eindproducten</h4>
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>10 maanden</td>
-            <td>-</td>
-            <td>€ 3.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>20 maanden</td>
-            <td>-</td>
-            <td>€ 3.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>30 maanden</td>
-            <td>-</td>
-            <td>€ 6.000,-</td>
-        </tr>
-    </tbody>
-</table>
-
-<h4>26-80 eindproducten</h4>
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>15 maanden</td>
-            <td>-</td>
-            <td>€ 5.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>30 maanden</td>
-            <td>-</td>
-            <td>€ 5.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>45 maanden</td>
-            <td>-</td>
-            <td>€ 5.000,-</td>
-        </tr>
-    </tbody>
-</table>
-
-<h4>80+ eindproducten</h4>
-<table class="wetboek-tabel">
-    <thead>
-        <tr>
-            <th>Veroordeling</th>
-            <th>Celstraf</th>
-            <th>Taakstraf</th>
-            <th>Boete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Eerste veroordeling</td>
-            <td>20 maanden</td>
-            <td>-</td>
-            <td>€ 6.000,-</td>
-        </tr>
-        <tr>
-            <td>Tweede veroordeling</td>
-            <td>30 maanden</td>
-            <td>-</td>
-            <td>€ 6.000,-</td>
-        </tr>
-        <tr>
-            <td>Meerdere veroordelingen</td>
-            <td>40 maanden</td>
-            <td>-</td>
-            <td>€ 12.000,-</td>
-        </tr>
-    </tbody>
-</table>
-
-      <summary>Overige bepalingen</summary>
-
-<style>
-    .wetboek-tabel {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 1em;
-        font-family: Arial, sans-serif;
-        background-color: #1e1e1e;
-        color: #f0f0f0;
-    }
-
-    .wetboek-tabel th, .wetboek-tabel td {
-        border: 1px solid #444;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .wetboek-tabel thead {
-        background-color: #2d2d2d;
-        font-weight: bold;
-    }
-
-    .wetboek-tabel tbody tr:nth-child(even) {
-        background-color: #2a2a2a;
-    }
-
-    .wetboek-tabel tbody tr:nth-child(odd) {
-        background-color: #1e1e1e;
-    }
-</style>
-
-<article>
-      <h2 style="color:gold; font-weight:bold;">Artikel 4.2: Niet voldoen aan bevel of vordering</h2>
-    <ol>
-        <li>Schuldig is een persoon die opzettelijk niet voldoet aan een bevel of vordering dat krachtens wettelijk voorschrift wordt gegeven door een ambtenaar in functie.</li>
-        <li>Schuldig is een persoon die opzettelijk een ambtenaar in functie belemmert in de uitvoering daarvan.</li>
-    </ol>
-    <table class="wetboek-tabel">
-        <thead>
-            <tr>
-                <th>Veroordeling</th>
-                <th>Celstraf</th>
-                <th>Taakstraf</th>
-                <th>Boete</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Eerste veroordeling</td>
-                <td>-</td>
-                <td>20 uren</td>
-                <td>€ 1.000,-</td>
-            </tr>
-            <tr>
-                <td>Tweede veroordeling</td>
-                <td>-</td>
-                <td>30 uren</td>
-                <td>€ 2.000,-</td>
-            </tr>
-            <tr>
-                <td>Meerdere veroordelingen</td>
-                <td>-</td>
-                <td>40 uren</td>
-                <td>€ 3.000,-</td>
-            </tr>
-        </tbody>
-    </table>
-</article>
-      
-      <h2 style="color:gold; font-weight:bold;">Artikel 6.2: Openstaande boetes</h2>
-        
-    <p>Wanneer tijdens een controle of aanhouding blijkt dat het totaalbedrag aan openstaande boetes boven de € 10.000,- uitkomt, kunnen hieraan consequenties verbonden zijn:</p>
-    <ul>
-        <li>Bij het opvragen van een inbeslaggenomen goed of voertuig kan geëist worden dat het boetebedrag eerst wordt voldaan.</li>
-        <li>Indien dit tijdens een onderzoek na een misdrijf of crimineel feit wordt vastgesteld, kan een extra boete of taakstraf worden opgelegd in overleg met een hOvJ of OvJ.</li>
-        <li>De hoogte van deze sanctie is ter beoordeling van de Officier van Justitie en maakt deel uit van de totale strafeis.</li>
-    </ul>
-    <p>Onder het voldoen van het boetebedrag wordt verstaan dat het openstaande bedrag onder de € 10.000,- moet komen.</p>
-</article>
-
-    
-    </section>
   </main>
   <footer>
-    &copy; 2025 Laporta RP - Alle rechten voorbehouden.
+    &copy; 2025 Laporta RP. Alle rechten voorbehouden.
   </footer>
+  <script>
+    function zoekArtikelen() {
+      const input = document.getElementById("zoekInput").value.toLowerCase();
+      const artikelen = document.querySelectorAll("article");
+      artikelen.forEach(artikel => {
+        const tekst = artikel.innerText.toLowerCase();
+        artikel.style.display = tekst.includes(input) ? "block" : "none";
+      });
+    }
+  </script>
 </body>
 </html>
