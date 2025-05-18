@@ -141,6 +141,51 @@
   display: block;
   opacity: 1;
 }
+     nav.inhoudsopgave {
+      width: 250px;
+      background-color: #1e1e1e;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    nav.inhoudsopgave h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    nav.inhoudsopgave ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav.inhoudsopgave li {
+      margin-bottom: 0.5rem;
+    }
+
+    nav.inhoudsopgave a {
+      color: #f1f1f1;
+      text-decoration: none;
+    }
+
+    nav.inhoudsopgave a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+    }
+
+    article {
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
@@ -156,6 +201,18 @@
   </div>
 </div>
   </header>
+  <div class="pagina-layout">
+    <nav class="inhoudsopgave">
+      <h2>Inhoudsopgave</h2>
+      <ul>
+        <li><a href="#artikel1">Artikel 1 - Verkeersdelicten</a></li>
+        <li><a href="#artikel2">Artikel 2 - Geweldsdelicten</a></li>
+        <li><a href="#artikel3">Artikel 3 - Vermogensdelicten</a></li>
+        <li><a href="#artikel4">Artikel 4 - Wet wapens en munitie</a></li>
+        <li><a href="#artikel5">Artikel 5 - Opiumwet</a></li>
+        <li><a href="#artikel6">Artikel 6 - Overige bepalingen</a></li>
+      </ul>
+    </nav>
   <main>
     <div class="zoekveld">
       <input type="text" id="zoekInput" oninput="zoekArtikelen()" placeholder="Zoek op artikelnummer of trefwoord..." />
@@ -174,7 +231,7 @@
 
     
     <!-- Artikel 1: Verkeersdelicten -->
-<article>
+<article id="artikel1">
       <h2 style="color:gold; font-weight:bold;">Artikel 1: Verkeersdelicten</h2>
       <h2 style="color:gold; font-weight:bold;">Artikel 1.1: Roekeloos rijgedrag</h2>
     <ol>
@@ -516,7 +573,7 @@
   
     
     <!-- Artikel 2: Geweldsdelicten -->
-    <article>
+    <article id="artikel2">
       <h2 style="color:gold; font-weight:bold;">Artikel 2: Geweldsdelicten</h2>
       <h2 style="color:gold; font-weight:bold;">Artikel 2.1: Gijzeling</h2>
     <ol>
@@ -683,7 +740,7 @@
    
     
     <!-- Artikel 3: Vermogensdelicten -->
-     <article>
+     <article id="artikel3">
       <h2 style="color:gold; font-weight:bold;">Artikel 3: Vermogensdelicten</h2>
       <h2 style="color:gold; font-weight:bold;">Artikel 3.1: Diefstal</h2>
     <ol>
@@ -887,7 +944,7 @@
  
     
     <!-- Artikel 4: Wet wapen en munitie -->
-     <article>
+     <article id="artikel4">
       <h2 style="color:gold; font-weight:bold;">Artikel 4: Wet wapens en munitie</h2>
       <h2 style="color:gold; font-weight:bold;">Artikel 4.1: Steek- en slagwapens</h2>
     <ol>
@@ -1083,7 +1140,7 @@
 
     
     <!-- Artikel 5: Opium -->
-     <article>
+     <article id="artikel5">
       <h2 style="color:gold; font-weight:bold;">Artikel 5: Opiumwet</h2>
       <h2 style="color:gold; font-weight:bold;">Artikel 5.1: Softdrugs</h2>
     <ol>
@@ -1490,7 +1547,7 @@
 
     
     <!-- Artikel 6: Overige bepalingen -->
-     <article>
+     <article id="artikel6">
       <h2 style="color:gold; font-weight:bold;">Artikel 6: Overige bepalingen</h2>
       <h2 style="color:gold; font-weight:bold;">Artikel 6.1: Niet voldoen aan een bevel of vordering</h2>
     <ol>
