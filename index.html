@@ -133,9 +133,22 @@
 .dropdown-menu:hover .dropdown-content {
   display: block;
 }
-    article:hover {
-  background-color: #333333;
-  cursor: pointer; /* Maakt het duidelijk dat het klikbaar is */
+    .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #1e1e1e;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Maak het menu geleidelijk zichtbaar */
+}
+
+.dropdown-menu:hover .dropdown-content {
+  display: block;
+  opacity: 1;
 }
   </style>
 </head>
