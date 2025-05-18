@@ -136,31 +136,31 @@
     article {
   margin-bottom: 4rem; /* Gebruik margin voor ruimte tussen artikelen */
 }
-    .container {
+.pagina-layout {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
-  padding: 2rem;
 }
 
 .inhoudsopgave {
   width: 250px;
   background-color: #1e1e1e;
   padding: 1rem;
-  border-radius: 8px;
-  height: fit-content;
+  margin-right: 2rem;
+  height: 100vh; /* Volledige hoogte van het scherm */
   position: sticky;
-  top: 2rem;
+  top: 0;
+  overflow-y: auto;
 }
 
 .inhoudsopgave h2 {
   font-size: 1.2rem;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .inhoudsopgave ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
 }
 
 .inhoudsopgave li {
@@ -176,8 +176,10 @@
   text-decoration: underline;
 }
 
-.inhoud {
+/* Zorg dat main ruimte overhoudt */
+main {
   flex: 1;
+  padding: 2rem;
 }
 
 .dropdown-menu:hover .dropdown-content {
@@ -209,8 +211,8 @@
         <li><a href="#artikel1">Artikel 1 - Verkeersdelicten</a></li>
         <li><a href="#artikel2">Artikel 2 - Geweldsdelicten</a></li>
         <li><a href="#artikel3">Artikel 3 - Vermogensdelicten</a></li>
-        <li><a href="#artikel3">Artikel 4 - Wet wapens en munitie</a></li>
-        <li><a href="#artikel3">Artikel 5 - Opiumwet</a></li>
+        <li><a href="#artikel4">Artikel 4 - Wet wapens en munitie</a></li>
+        <li><a href="#artikel5">Artikel 5 - Opiumwet</a></li>
         <li><a href="#artikel6">Artikel 6 - Overige bepalingen</a></li>
       </ul>
     </nav>
