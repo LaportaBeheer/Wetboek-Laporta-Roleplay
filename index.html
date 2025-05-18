@@ -136,6 +136,49 @@
     article {
   margin-bottom: 4rem; /* Gebruik margin voor ruimte tussen artikelen */
 }
+    .container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.inhoudsopgave {
+  width: 250px;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+}
+
+.inhoudsopgave h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.inhoudsopgave ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.inhoudsopgave li {
+  margin-bottom: 0.5rem;
+}
+
+.inhoudsopgave a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.inhoudsopgave a:hover {
+  text-decoration: underline;
+}
+
+.inhoud {
+  flex: 1;
+}
 
 .dropdown-menu:hover .dropdown-content {
   display: block;
@@ -154,7 +197,34 @@
     <a href="https://laportaroleplay.nl" target="_blank">Laporta RP APV</a>
     <a href="https://discord.gg/NN6c9bDatA" target="_blank">Laporta RP Discord</a>
   </div>
+              <div class="container">
+  <nav class="inhoudsopgave">
+    <h2>Inhoudsopgave</h2>
+    <ul>
+      <li><a href="#artikel1">Artikel 1 - Diefstal</a></li>
+      <li><a href="#artikel2">Artikel 2 - Mishandeling</a></li>
+      <li><a href="#artikel3">Artikel 3 - Openbare orde</a></li>
+    </ul>
+  </nav>
+
+  <main class="inhoud">
+    <article id="artikel1">
+      <h2>Artikel 1 - Diefstal</h2>
+      <p>Beschrijving van diefstal...</p>
+    </article>
+
+    <article id="artikel2">
+      <h2>Artikel 2 - Mishandeling</h2>
+      <p>Beschrijving van mishandeling...</p>
+    </article>
+
+    <article id="artikel3">
+      <h2>Artikel 3 - Openbare orde</h2>
+      <p>Beschrijving van openbare orde...</p>
+    </article>
+  </main>
 </div>
+            <div>
   </header>
   <main>
     <div class="zoekveld">
