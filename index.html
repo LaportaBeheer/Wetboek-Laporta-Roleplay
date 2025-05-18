@@ -194,6 +194,24 @@
   margin: 0;
   padding: 0;
 }
+    .container {
+  display: flex;
+}
+
+.inhoudsopgave {
+  width: 250px;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+}
     
   </style>
 </head>
@@ -211,10 +229,9 @@
 </div>
   </header>
   <main>
-    <div class="zoekveld">
+    <div class="container">
       <input type="text" id="zoekInput" oninput="zoekArtikelen()" placeholder="Zoek op artikelnummer of trefwoord..." />
-    </div>
- <div class="container">
+      
         <nav class="inhoudsopgave">
       <h2>Inhoudsopgave</h2>
       <ul>
