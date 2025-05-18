@@ -87,12 +87,66 @@
     .wetboek-tabel tbody tr:nth-child(odd) {
       background-color: #1e1e1e;
     }
+    .dropdown-menu {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.dropbtn {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  background-color: #3a3a3a;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #1e1e1e;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #f1f1f1;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+.dropdown-menu:hover .dropdown-content {
+  display: block;
+}
   </style>
 </head>
 <body>
   <header>
     <img src="laporta-logo-optimized.png" alt="Laporta RP Logo" />
     <h1>Laporta RP Wetboek</h1>
+            <div class="dropdown-menu">
+  <button class="dropbtn">Menu ▾</button>
+  <div class="dropdown-content">
+    <a href="https://laporta-rp.tebex.io/" target="_blank">Laporta RP Shop</a>
+    <a href="https://laportaroleplay.nl" target="_blank">Laporta RP APV</a>
+    <a href="https://discord.gg/NN6c9bDatA" target="_blank">Discord</a>
+  </div>
+</div>
   </header>
   <main>
     <div class="zoekveld">
